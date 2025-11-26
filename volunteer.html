@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Volunteer — Matri Ghar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAt933b3w5pkFDWA08sANv9yleSEpPoaDu9A&s" alt="logo" class="logo" />
+        <div class="title"><h1>Matri Ghar</h1><p class="tag">Care • Dignity • Home</p></div>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="events.html">Events</a>
+        <a href="volunteer.html" class="active">Volunteer</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="donate.html" class="donate-link">Donate</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button id="themeToggle5" class="theme-btn">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container">
+     <h2>Volunteer</h2>
+	 <P>Volunteers symbolize the spirit of generosity and compassion, and many of our programmes would not be successful without the time and talents of our dedicated volunteers. Moreover, our volunteers find their experiences at Maitri to be very rewarding.
+
+Many of our volunteers assist us with our programmes in various ways; any skill set or interest can be put to good use.
+
+Maitri also connects with volunteers all over the world who can contribute their skills online though our virtual volunteering programme to help address our organization’s needs and strengthen the impact of our work</P>
+	 
+	 <h2>Volunteer Sign-up</h2>
+      <form id="volForm">
+        <div class="field"><label>Full name</label><input name="name" required /></div>
+        <div class="field"><label>Email</label><input name="email" type="email" required /></div>
+        <div class="field"><label>Phone</label><input name="phone" required /></div>
+        <div class="field"><label>Preferred shift</label>
+          <select name="shift"><option>Morning</option><option>Afternoon</option><option>Evening</option></select>
+        </div>
+        <div style="display:flex;gap:12px;margin-top:12px;">
+          <button type="submit" class="btn primary">Sign Up</button>
+          <button type="button" id="exportVol" class="btn ghost">Export CSV (demo)</button>
+        </div>
+      </form>
+      <p class="muted" style="margin-top:12px">Note: volunteer data stored locally in browser (demo). For real app, connect to server.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Matri Ghar</strong>
+        <div class="small muted">Registered Trust | Caring since 2005</div>
+      </div>
+      <div class="small muted">© 2025 Matri Ghar — All rights reserved</div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

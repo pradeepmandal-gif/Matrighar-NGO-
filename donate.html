@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Donate — Matri Ghar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAt933b3w5pkFDWA08sANv9yleSEpPoaDu9A&s" alt="logo" class="logo" />
+        <div class="title"><h1>Matri Ghar</h1><p class="tag">Care • Dignity • Home</p></div>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="events.html">Events</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="donate.html" class="active donate-link">Donate</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button id="themeToggle7" class="theme-btn">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container">
+      <h2>Support Matri Ghar</h2>
+      <p class="muted">Choose a payment method below. For production, use your payment gateway keys and server verification.</p>
+
+      <div class="donate-grid">
+        <div class="donate-box">
+          <h3>Quick Donate (Razorpay)</h3>
+          <input id="donName" placeholder="Full name" />
+          <input id="donEmail" placeholder="Email (optional)" />
+          <input id="donAmt" type="number" placeholder="Amount (INR)" min="10" />
+          <div style="margin-top:12px;">
+            <button id="rzpDonate" class="btn primary">Donate via Razorpay</button>
+          </div>
+          <p class="small muted" style="margin-top:12px">Note: replace <code>RAZORPAY_KEY</code> in js/payment.js and implement server order creation for production.</p>
+        </div>
+
+        <div class="donate-box">
+          <h3>UPI / Bank</h3>
+          <p class="small"><strong>UPI ID:</strong> matrighar@upi</p>
+          <p class="small"><strong>Bank:</strong> Matri Ghar Trust — A/c 4548856453 | IFSC: IOBA0058</p>
+          <p class="muted">Scan the UPI QR or use the VPA to pay directly.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+  <div class="container footer-inner">
+      <div>
+        <strong>Matri Ghar</strong>
+        <div class="small muted">Registered Trust | Caring since 2005</div>
+      </div>
+      <div class="small muted">© 2025 Matri Ghar — All rights reserved</div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/payment.js"></script>
+</body>
+</html>
